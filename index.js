@@ -1,6 +1,14 @@
 const express = require('express')
 const app = express()
 
+
+app.use((req,res,next)=>{
+  console.log("Middleware Main")
+  console.log(req.method + "/" + req.url)
+  next()
+})
+
+
 let lowBudget = {
     lowBudgetGPUs: [
       {
@@ -116,19 +124,23 @@ let lowBudget = {
 
   app.get("/lowBudget", (req, res) => {
     res.json(lowBudget)
-    res.send(<h1>THANK YOU FOR CHOOSING GPU PART PICKER</h1>)
+    res.send("<h1>THANK YOU FOR CHOOSING GPU PART PICKER</h1>")
   })
 
   app.get("/midBudget", (req, res) => {
     res.json(midBudget)
-    res.send(<h1>THANK YOU FOR CHOOSING GPU PART PICKER</h1>)
+    res.send("<h1>THANK YOU FOR CHOOSING GPU PART PICKER</h1>")
   })
 
   app.get("/highBudget", (req, res) => {
     res.json(highBudget)
-    res.send(<h1>THANK YOU FOR CHOOSING GPU PART PICKER</h1>)
+    res.send("<h1>THANK YOU FOR CHOOSING GPU PART PICKER</h1>")
   })
 
+  app.use((req,res,next)=>{
+    res.status(404).send("ERROR! NOT FOUND")
+  })
+  
 
   app.listen(3000, () => {
     console.log("Server running")

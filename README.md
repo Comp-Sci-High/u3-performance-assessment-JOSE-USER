@@ -1,3 +1,5 @@
-[![Review Assignment Due Date](https://classroom.github.com/assets/deadline-readme-button-22041afd0340ce965d47ae6ef1cefeee28c7c493a6346c4f15d667ab976d596c.svg)](https://classroom.github.com/a/HARs_Oy5)
-[![Open in Visual Studio Code](https://classroom.github.com/assets/open-in-vscode-2e0aaae1b6195c2367325f4f02e2d04e9abb55f0b24a779b69b11b9e10269abc.svg)](https://classroom.github.com/online_ide?assignment_repo_id=17629850&assignment_repo_type=AssignmentRepo)
-# node-template
+<!--  Why did you pick this API topic? -> I picked this API topic because 1.) I love computers and building them, so in general its passion 2.) My friends and family consitantly ask me what computer part they should upgrade with price, etc... So, it saves me time and energy. -->
+
+<!-- Describe your API and the available data endpoints: -> My API allows you to access spefic Graphic Proccessing Units (GPU(s)) within 3 diffrent price ranges including low, mid, and high budget ranges. There are 3 endpoints available (/lowBudget, /midBudget, and /highBudget) -->
+
+<!-- How was your experience building your own API server after using other APIs as a client in Unit 2? -> To be completely honest, this was easier than using API's themselves. I was able to build this "API" in like a day.  -->
