@@ -115,7 +115,7 @@ let lowBudget = {
   }
 
   app.get("/", (req, res) => {
-    res.send("<h1>Welcome to Budget GPU picker (GO TO /docs FOR MORE INFO)</h1>")
+    res.send("<h1> Welcome to Budget GPU picker (GO TO /docs FOR MORE INFO)</h1>" + "<img src = highBudget.highRangeGPUs.image></img>")
   })
 
   app.get("/docs", (req, res) => {
